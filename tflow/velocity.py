@@ -6494,7 +6494,7 @@ def get_sample_turb_field_3d(return_coord=True):
     # get module location
     mod_loc = os.path.abspath(__file__)
     pdir, filename = os.path.split(mod_loc)
-    datapath = os.path.join(pdir, 'reference_data/isoturb_slice2.h5')
+    datapath = os.path.join(pdir, '../reference_data/isoturb_slice2.h5')
     data = h5py.File(datapath, 'r')
 
     keys = list(data.keys())
